@@ -42,6 +42,8 @@ jobs:
     env:
       SCCACHE_GHA_ENABLED: "true"
       RUSTC_WRAPPER: "sccache"
+      SCCACHE_ERROR_LOG: D:\a\_temp\sccache_log.txt
+      SCCACHE_LOG: debug
     strategy:
       matrix:
         os:
@@ -53,9 +55,6 @@ jobs:
         uses: ./.github/actions/setup
       - name: Run sccache-cache
         uses: mozilla-actions/sccache-action@v0.0.3
-        env:
-          SCCACHE_ERROR_LOG: ${{ runner.temp }}/sccache_log.txt
-          SCCACHE_LOG: debug
         with:
           version: "v0.5.1"
       - name: Test
@@ -72,4 +71,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Sccache Logs
-          path: ${{ runner.temp }}/sccache_log.txt
+          path: D:\a\_temp\sccache_log.txt
