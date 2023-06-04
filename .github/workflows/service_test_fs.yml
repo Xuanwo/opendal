@@ -60,7 +60,7 @@ jobs:
       - name: Test
         shell: bash
         working-directory: core
-        timeout-minutes: 10
+        timeout-minutes: 5
         run: cargo test services_fs
         env:
           OPENDAL_FS_TEST: on
