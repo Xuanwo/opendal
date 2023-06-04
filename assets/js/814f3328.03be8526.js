@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkopendal_website=self.webpackChunkopendal_website||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Way to Go: OpenDAL successfully entered Apache Incubator","permalink":"/blog/opendal-entered-apache-incubator"}]}')}}]);

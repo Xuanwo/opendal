@@ -1,0 +1,734 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>Operator | Apache OpenDAL - v0.36.1</title><meta name="description" content="Documentation for Apache OpenDAL"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base="..">
+<div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
+<div class="field">
+<div id="tsd-toolbar-links"><a href="https://opendal.apache.org/">Homepage</a><a href="https://github.com/apache/incubator-opendal/tree/main/bindings/nodejs">GitHub</a></div></div>
+<ul class="results">
+<li class="state loading">Preparing search index...</li>
+<li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">Apache OpenDAL - v0.36.1</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb">
+<li><a href="../modules.html">Apache OpenDAL</a></li>
+<li><a href="Operator.html">Operator</a></li></ul>
+<h1>Class Operator</h1></div>
+<section class="tsd-panel tsd-hierarchy">
+<h4>Hierarchy</h4>
+<ul class="tsd-hierarchy">
+<li><span class="target">Operator</span></li></ul></section><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L33">index.d.ts:33</a></li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
+<h5 class="tsd-index-heading uppercase" role="button" aria-expanded="false" tabIndex=0><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1.5 5.50969L8 11.6609L14.5 5.50969L12.5466 3.66086L8 7.96494L3.45341 3.66086L1.5 5.50969Z" fill="var(--color-text)"></path></svg> Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Constructors</h3>
+<div class="tsd-index-list"><a href="Operator.html#constructor" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#4D7FFF" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-512-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-512-text"></path></svg><span>constructor</span></a>
+</div></section>
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading">Methods</h3>
+<div class="tsd-index-list"><a href="Operator.html#append" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF4DB8" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-2048-path"></rect><path d="M9.162 16V7.24H10.578L11.514 10.072C11.602 10.328 11.674 10.584 11.73 10.84C11.794 11.088 11.842 11.28 11.874 11.416C11.906 11.28 11.954 11.088 12.018 10.84C12.082 10.584 12.154 10.324 12.234 10.06L13.122 7.24H14.538V16H13.482V12.82C13.482 12.468 13.49 12.068 13.506 11.62C13.53 11.172 13.558 10.716 13.59 10.252C13.622 9.78 13.654 9.332 13.686 8.908C13.726 8.476 13.762 8.1 13.794 7.78L12.366 12.16H11.334L9.894 7.78C9.934 8.092 9.97 8.456 10.002 8.872C10.042 9.28 10.078 9.716 10.11 10.18C10.142 10.636 10.166 11.092 10.182 11.548C10.206 12.004 10.218 12.428 10.218 12.82V16H9.162Z" fill="var(--color-text)" id="icon-2048-text"></path></svg><span>append</span></a>
+<a href="Operator.html#check" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>check</span></a>
+<a href="Operator.html#copy" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>copy</span></a>
+<a href="Operator.html#copySync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>copy<wbr/>Sync</span></a>
+<a href="Operator.html#createDir" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Dir</span></a>
+<a href="Operator.html#createDirSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Dir<wbr/>Sync</span></a>
+<a href="Operator.html#delete" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>delete</span></a>
+<a href="Operator.html#deleteSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>delete<wbr/>Sync</span></a>
+<a href="Operator.html#isExist" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>is<wbr/>Exist</span></a>
+<a href="Operator.html#isExistSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>is<wbr/>Exist<wbr/>Sync</span></a>
+<a href="Operator.html#list" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>list</span></a>
+<a href="Operator.html#listSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>list<wbr/>Sync</span></a>
+<a href="Operator.html#presignRead" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>presign<wbr/>Read</span></a>
+<a href="Operator.html#presignStat" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>presign<wbr/>Stat</span></a>
+<a href="Operator.html#presignWrite" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>presign<wbr/>Write</span></a>
+<a href="Operator.html#read" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>read</span></a>
+<a href="Operator.html#readSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>read<wbr/>Sync</span></a>
+<a href="Operator.html#remove" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove</span></a>
+<a href="Operator.html#removeAll" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove<wbr/>All</span></a>
+<a href="Operator.html#rename" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>rename</span></a>
+<a href="Operator.html#renameSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>rename<wbr/>Sync</span></a>
+<a href="Operator.html#scan" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>scan</span></a>
+<a href="Operator.html#scanSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>scan<wbr/>Sync</span></a>
+<a href="Operator.html#stat" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>stat</span></a>
+<a href="Operator.html#statSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>stat<wbr/>Sync</span></a>
+<a href="Operator.html#write" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>write</span></a>
+<a href="Operator.html#writeSync" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>write<wbr/>Sync</span></a>
+</div></section></div></details></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Constructors</h2>
+<section class="tsd-panel tsd-member"><a id="constructor" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" id="icon-anchor-a"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" id="icon-anchor-b"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" id="icon-anchor-c"></path></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Operator"><span class="tsd-kind-constructor-signature">new <wbr/>Operator</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">scheme</span>, <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Operator.html" class="tsd-signature-type tsd-kind-class">Operator</a><a href="#constructor.new_Operator" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">scheme</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><code class="tsd-tag ts-flagOptional">Optional</code> <span class="tsd-kind-parameter">options</span>: <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="Operator.html" class="tsd-signature-type tsd-kind-class">Operator</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L34">index.d.ts:34</a></li></ul></aside></li></ul></section></section>
+<section class="tsd-panel-group tsd-member-group">
+<h2>Methods</h2>
+<section class="tsd-panel tsd-member"><a id="append" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>append</span><a href="#append" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="append.append-1"><span class="tsd-kind-call-signature">append</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">content</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#append.append-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Append bytes into path.</p>
+<a id="md:notes" class="tsd-anchor"></a><h3><a href="#md:notes">Notes</a></h3><ul>
+<li>It always appends content to the end of the file.</li>
+<li>It will create file if the path not exists.</li>
+</ul>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">append</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-3">Buffer</span><span class="hl-0">.</span><span class="hl-5">from</span><span class="hl-0">(</span><span class="hl-1">&quot;hello world&quot;</span><span class="hl-0">));</span><br/><span class="hl-8">// or</span><br/><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">append</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;hello world&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">content</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Buffer</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L169">index.d.ts:169</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="check" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>check</span><a href="#check" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="check.check-1"><span class="tsd-kind-call-signature">check</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#check.check-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Check if this operator can work correctly.</p>
+<p>We will send a <code>list</code> request to path and return any errors we met.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">check</span><span class="hl-0">();</span>
+</code><button>Copy</button></pre>
+</div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L77">index.d.ts:77</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="copy" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>copy</span><a href="#copy" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="copy.copy-1"><span class="tsd-kind-call-signature">copy</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">from</span>, <span class="tsd-kind-parameter">to</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#copy.copy-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Copy file according to given <code>from</code> and <code>to</code> path.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">copy</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;path/to/dest&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">from</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">to</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L178">index.d.ts:178</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="copySync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>copy<wbr/>Sync</span><a href="#copySync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="copySync.copySync-1"><span class="tsd-kind-call-signature">copy<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">from</span>, <span class="tsd-kind-parameter">to</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#copySync.copySync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Copy file according to given <code>from</code> and <code>to</code> path synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">copySync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;path/to/dest&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">from</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">to</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L187">index.d.ts:187</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="createDir" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Dir</span><a href="#createDir" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="createDir.createDir-1"><span class="tsd-kind-call-signature">create<wbr/>Dir</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#createDir.createDir-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Create dir with given path.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">createDir</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/dir/&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L104">index.d.ts:104</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="createDirSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>create<wbr/>Dir<wbr/>Sync</span><a href="#createDirSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="createDirSync.createDirSync-1"><span class="tsd-kind-call-signature">create<wbr/>Dir<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#createDirSync.createDirSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Create dir with given path synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">createDirSync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/dir/&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L113">index.d.ts:113</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="delete" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>delete</span><a href="#delete" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="delete.delete-1"><span class="tsd-kind-call-signature">delete</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#delete.delete-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Delete the given path.</p>
+<a id="md:notes" class="tsd-anchor"></a><h3><a href="#md:notes">Notes</a></h3><p>Delete not existing error won’t return errors.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">delete</span><span class="hl-0">(</span><span class="hl-1">&quot;test&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L267">index.d.ts:267</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="deleteSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>delete<wbr/>Sync</span><a href="#deleteSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="deleteSync.deleteSync-1"><span class="tsd-kind-call-signature">delete<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#deleteSync.deleteSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Delete the given path synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">deleteSync</span><span class="hl-0">(</span><span class="hl-1">&quot;test&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L276">index.d.ts:276</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="isExist" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>is<wbr/>Exist</span><a href="#isExist" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="isExist.isExist-1"><span class="tsd-kind-call-signature">is<wbr/>Exist</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><a href="#isExist.isExist-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Check if this path exists or not.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">isExist</span><span class="hl-0">(</span><span class="hl-1">&quot;test&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L86">index.d.ts:86</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="isExistSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>is<wbr/>Exist<wbr/>Sync</span><a href="#isExistSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="isExistSync.isExistSync-1"><span class="tsd-kind-call-signature">is<wbr/>Exist<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><a href="#isExistSync.isExistSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Check if this path exists or not synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">isExistSync</span><span class="hl-0">(</span><span class="hl-1">&quot;test&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L95">index.d.ts:95</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="list" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>list</span><a href="#list" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="list.list-1"><span class="tsd-kind-call-signature">list</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Lister.html" class="tsd-signature-type tsd-kind-class">Lister</a><span class="tsd-signature-symbol">&gt;</span><a href="#list.list-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>List given path.</p>
+<p>This function will create a new handle to list entries.</p>
+<p>An error will be returned if given path doesn&#39;t end with <code>/</code>.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">lister</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">list</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/dir/&quot;</span><span class="hl-0">);</span><br/><span class="hl-2">while</span><span class="hl-0"> (</span><span class="hl-4">true</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">entry</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">lister</span><span class="hl-0">.</span><span class="hl-5">next</span><span class="hl-0">();</span><br/><span class="hl-0">  </span><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">entry</span><span class="hl-0"> === </span><span class="hl-4">null</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-2">break</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">  </span><span class="hl-4">let</span><span class="hl-0"> </span><span class="hl-3">meta</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">stat</span><span class="hl-0">(</span><span class="hl-3">entry</span><span class="hl-0">.</span><span class="hl-3">path</span><span class="hl-0">);</span><br/><span class="hl-0">  </span><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">meta</span><span class="hl-0">.</span><span class="hl-3">isFile</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-8">// do something</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Lister.html" class="tsd-signature-type tsd-kind-class">Lister</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L323">index.d.ts:323</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="listSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>list<wbr/>Sync</span><a href="#listSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="listSync.listSync-1"><span class="tsd-kind-call-signature">list<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BlockingLister.html" class="tsd-signature-type tsd-kind-class">BlockingLister</a><a href="#listSync.listSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>List given path synchronously.</p>
+<p>This function will create a new handle to list entries.</p>
+<p>An error will be returned if given path doesn&#39;t end with <code>/</code>.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">lister</span><span class="hl-0"> = </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">listSync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/dir/&quot;</span><span class="hl-0">);</span><br/><span class="hl-2">while</span><span class="hl-0"> (</span><span class="hl-4">true</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">entry</span><span class="hl-0"> = </span><span class="hl-3">lister</span><span class="hl-0">.</span><span class="hl-5">next</span><span class="hl-0">();</span><br/><span class="hl-0">  </span><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">entry</span><span class="hl-0"> === </span><span class="hl-4">null</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-2">break</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">  </span><span class="hl-4">let</span><span class="hl-0"> </span><span class="hl-3">meta</span><span class="hl-0"> = </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">statSync</span><span class="hl-0">(</span><span class="hl-3">entry</span><span class="hl-0">.</span><span class="hl-3">path</span><span class="hl-0">);</span><br/><span class="hl-0">  </span><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">meta</span><span class="hl-0">.</span><span class="hl-3">isFile</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-8">// do something</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="BlockingLister.html" class="tsd-signature-type tsd-kind-class">BlockingLister</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L346">index.d.ts:346</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="presignRead" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>presign<wbr/>Read</span><a href="#presignRead" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="presignRead.presignRead-1"><span class="tsd-kind-call-signature">presign<wbr/>Read</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">expires</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/PresignedRequest.html" class="tsd-signature-type tsd-kind-interface">PresignedRequest</a><span class="tsd-signature-symbol">&gt;</span><a href="#presignRead.presignRead-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get a presigned request for read.</p>
+<p>Unit of expires is seconds.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">req</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">presignRead</span><span class="hl-0">(</span><span class="hl-3">path</span><span class="hl-0">, </span><span class="hl-5">parseInt</span><span class="hl-0">(</span><span class="hl-3">expires</span><span class="hl-0">));</span><br/><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;method: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">method</span><span class="hl-0">);</span><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;url: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">url</span><span class="hl-0">);</span><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;headers: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">headers</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">expires</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/PresignedRequest.html" class="tsd-signature-type tsd-kind-interface">PresignedRequest</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L362">index.d.ts:362</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="presignStat" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>presign<wbr/>Stat</span><a href="#presignStat" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="presignStat.presignStat-1"><span class="tsd-kind-call-signature">presign<wbr/>Stat</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">expires</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/PresignedRequest.html" class="tsd-signature-type tsd-kind-interface">PresignedRequest</a><span class="tsd-signature-symbol">&gt;</span><a href="#presignStat.presignStat-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get a presigned request for stat.</p>
+<p>Unit of expires is seconds.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">req</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">presignStat</span><span class="hl-0">(</span><span class="hl-3">path</span><span class="hl-0">, </span><span class="hl-5">parseInt</span><span class="hl-0">(</span><span class="hl-3">expires</span><span class="hl-0">));</span><br/><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;method: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">method</span><span class="hl-0">);</span><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;url: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">url</span><span class="hl-0">);</span><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;headers: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">headers</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">expires</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/PresignedRequest.html" class="tsd-signature-type tsd-kind-interface">PresignedRequest</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L394">index.d.ts:394</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="presignWrite" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>presign<wbr/>Write</span><a href="#presignWrite" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="presignWrite.presignWrite-1"><span class="tsd-kind-call-signature">presign<wbr/>Write</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">expires</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/PresignedRequest.html" class="tsd-signature-type tsd-kind-interface">PresignedRequest</a><span class="tsd-signature-symbol">&gt;</span><a href="#presignWrite.presignWrite-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get a presigned request for write.</p>
+<p>Unit of expires is seconds.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">req</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">presignWrite</span><span class="hl-0">(</span><span class="hl-3">path</span><span class="hl-0">, </span><span class="hl-5">parseInt</span><span class="hl-0">(</span><span class="hl-3">expires</span><span class="hl-0">));</span><br/><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;method: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">method</span><span class="hl-0">);</span><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;url: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">url</span><span class="hl-0">);</span><br/><span class="hl-3">console</span><span class="hl-0">.</span><span class="hl-5">log</span><span class="hl-0">(</span><span class="hl-1">&quot;headers: &quot;</span><span class="hl-0">, </span><span class="hl-3">req</span><span class="hl-0">.</span><span class="hl-3">headers</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">expires</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/PresignedRequest.html" class="tsd-signature-type tsd-kind-interface">PresignedRequest</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L378">index.d.ts:378</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="read" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>read</span><a href="#read" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="read.read-1"><span class="tsd-kind-call-signature">read</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Buffer</span><span class="tsd-signature-symbol">&gt;</span><a href="#read.read-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Read the whole path into a buffer.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">buf</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">read</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L122">index.d.ts:122</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="readSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>read<wbr/>Sync</span><a href="#readSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="readSync.readSync-1"><span class="tsd-kind-call-signature">read<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Buffer</span><a href="#readSync.readSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Read the whole path into a buffer synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">buf</span><span class="hl-0"> = </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">readSync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Buffer</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L131">index.d.ts:131</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="remove" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>remove</span><a href="#remove" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="remove.remove-1"><span class="tsd-kind-call-signature">remove</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">paths</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#remove.remove-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Remove given paths.</p>
+<a id="md:notes" class="tsd-anchor"></a><h3><a href="#md:notes">Notes</a></h3><p>If underlying services support delete in batch, we will use batch delete instead.</p>
+<a id="md:examples" class="tsd-anchor"></a><h3><a href="#md:examples">Examples</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">remove</span><span class="hl-0">([</span><span class="hl-1">&quot;abc&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;def&quot;</span><span class="hl-0">]);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">paths</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L288">index.d.ts:288</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="removeAll" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>remove<wbr/>All</span><a href="#removeAll" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="removeAll.removeAll-1"><span class="tsd-kind-call-signature">remove<wbr/>All</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#removeAll.removeAll-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Remove the path and all nested dirs and files recursively.</p>
+<a id="md:notes" class="tsd-anchor"></a><h3><a href="#md:notes">Notes</a></h3><p>If underlying services support delete in batch, we will use batch delete instead.</p>
+<a id="md:examples" class="tsd-anchor"></a><h3><a href="#md:examples">Examples</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">removeAll</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/dir/&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L300">index.d.ts:300</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="rename" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>rename</span><a href="#rename" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="rename.rename-1"><span class="tsd-kind-call-signature">rename</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">from</span>, <span class="tsd-kind-parameter">to</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#rename.rename-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Rename file according to given <code>from</code> and <code>to</code> path.</p>
+<p>It&#39;s similar to <code>mv</code> command.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">rename</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;path/to/dest&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">from</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">to</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L198">index.d.ts:198</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="renameSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>rename<wbr/>Sync</span><a href="#renameSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="renameSync.renameSync-1"><span class="tsd-kind-call-signature">rename<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">from</span>, <span class="tsd-kind-parameter">to</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#renameSync.renameSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Rename file according to given <code>from</code> and <code>to</code> path synchronously.</p>
+<p>It&#39;s similar to <code>mv</code> command.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">renameSync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;path/to/dest&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">from</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">to</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L209">index.d.ts:209</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="scan" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>scan</span><a href="#scan" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="scan.scan-1"><span class="tsd-kind-call-signature">scan</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Lister.html" class="tsd-signature-type tsd-kind-class">Lister</a><span class="tsd-signature-symbol">&gt;</span><a href="#scan.scan-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>List dir in flat way.</p>
+<p>This function will create a new handle to list entries.</p>
+<p>An error will be returned if given path doesn’t end with /.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">lister</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">scan</span><span class="hl-0">(</span><span class="hl-1">&quot;/path/to/dir/&quot;</span><span class="hl-0">);</span><br/><span class="hl-2">while</span><span class="hl-0"> (</span><span class="hl-4">true</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">entry</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">lister</span><span class="hl-0">.</span><span class="hl-5">next</span><span class="hl-0">();</span><br/><span class="hl-0">  </span><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">entry</span><span class="hl-0"> === </span><span class="hl-4">null</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-2">break</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">  </span><span class="hl-4">let</span><span class="hl-0"> </span><span class="hl-3">meta</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">stat</span><span class="hl-0">(</span><span class="hl-3">entry</span><span class="hl-0">.</span><span class="hl-3">path</span><span class="hl-0">);</span><br/><span class="hl-0">  </span><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">meta</span><span class="hl-0">.</span><span class="hl-3">is_file</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-8">// do something</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Lister.html" class="tsd-signature-type tsd-kind-class">Lister</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L232">index.d.ts:232</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="scanSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>scan<wbr/>Sync</span><a href="#scanSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="scanSync.scanSync-1"><span class="tsd-kind-call-signature">scan<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="BlockingLister.html" class="tsd-signature-type tsd-kind-class">BlockingLister</a><a href="#scanSync.scanSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>List dir in flat way synchronously.</p>
+<p>This function will create a new handle to list entries.</p>
+<p>An error will be returned if given path doesn’t end with /.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">lister</span><span class="hl-0"> = </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">scan_sync</span><span class="hl-0">(/</span><span class="hl-3">path</span><span class="hl-0">/</span><span class="hl-3">to</span><span class="hl-0">/</span><span class="hl-3">dir</span><span class="hl-0">/</span><span class="hl-1">&quot;)</span><span class="hl-9">;</span><br/><span class="hl-5">while</span><span class="hl-0"> (</span><span class="hl-4">true</span><span class="hl-0">) {</span><br/><span class="hl-0">  const </span><span class="hl-3">entry</span><span class="hl-0"> = </span><span class="hl-3">lister</span><span class="hl-0">.</span><span class="hl-5">next</span><span class="hl-0">();</span><br/><span class="hl-0">  </span><span class="hl-5">if</span><span class="hl-0"> (</span><span class="hl-3">entry</span><span class="hl-0"> === </span><span class="hl-3">null</span><span class="hl-0">) {</span><br/><span class="hl-0">    </span><span class="hl-2">break</span><span class="hl-0">;</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">  let </span><span class="hl-3">meta</span><span class="hl-0"> = </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">statSync</span><span class="hl-0">(</span><span class="hl-3">entry</span><span class="hl-0">.</span><span class="hl-3">path</span><span class="hl-0">);</span><br/><span class="hl-0">  </span><span class="hl-5">if</span><span class="hl-0"> (meta.is_file) {</span><br/><span class="hl-0">    </span><span class="hl-8">// do something</span><br/><span class="hl-0">  }</span><br/><span class="hl-0">}</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="BlockingLister.html" class="tsd-signature-type tsd-kind-class">BlockingLister</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L255">index.d.ts:255</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="stat" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>stat</span><a href="#stat" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="stat.stat-1"><span class="tsd-kind-call-signature">stat</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Metadata.html" class="tsd-signature-type tsd-kind-class">Metadata</a><span class="tsd-signature-symbol">&gt;</span><a href="#stat.stat-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get current path&#39;s metadata <strong>without cache</strong> directly.</p>
+<a id="md:notes" class="tsd-anchor"></a><h3><a href="#md:notes">Notes</a></h3><p>Use stat if you:</p>
+<ul>
+<li>Want detect the outside changes of path.</li>
+<li>Don’t want to read from cached metadata.</li>
+</ul>
+<p>You may want to use <code>metadata</code> if you are working with entries returned by <code>Lister</code>. It’s highly possible that metadata you want has already been cached.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">meta</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">stat</span><span class="hl-0">(</span><span class="hl-1">&quot;test&quot;</span><span class="hl-0">);</span><br/><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">meta</span><span class="hl-0">.</span><span class="hl-3">isDir</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-8">// do something</span><br/><span class="hl-0">}</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="Metadata.html" class="tsd-signature-type tsd-kind-class">Metadata</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L54">index.d.ts:54</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="statSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>stat<wbr/>Sync</span><a href="#statSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="statSync.statSync-1"><span class="tsd-kind-call-signature">stat<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Metadata.html" class="tsd-signature-type tsd-kind-class">Metadata</a><a href="#statSync.statSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Get current path&#39;s metadata <strong>without cache</strong> directly and synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-4">const</span><span class="hl-0"> </span><span class="hl-6">meta</span><span class="hl-0"> = </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">statSync</span><span class="hl-0">(</span><span class="hl-1">&quot;test&quot;</span><span class="hl-0">);</span><br/><span class="hl-2">if</span><span class="hl-0"> (</span><span class="hl-3">meta</span><span class="hl-0">.</span><span class="hl-3">isDir</span><span class="hl-0">) {</span><br/><span class="hl-0">  </span><span class="hl-8">// do something</span><br/><span class="hl-0">}</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <a href="Metadata.html" class="tsd-signature-type tsd-kind-class">Metadata</a></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L66">index.d.ts:66</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="write" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>write</span><a href="#write" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="write.write-1"><span class="tsd-kind-call-signature">write</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">content</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><a href="#write.write-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Write bytes into path.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">write</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-3">Buffer</span><span class="hl-0">.</span><span class="hl-5">from</span><span class="hl-0">(</span><span class="hl-1">&quot;hello world&quot;</span><span class="hl-0">));</span><br/><span class="hl-8">// or</span><br/><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">write</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;hello world&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">content</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Buffer</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type ">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L142">index.d.ts:142</a></li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="writeSync" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>write<wbr/>Sync</span><a href="#writeSync" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="writeSync.writeSync-1"><span class="tsd-kind-call-signature">write<wbr/>Sync</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">path</span>, <span class="tsd-kind-parameter">content</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><a href="#writeSync.writeSync-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Write bytes into path synchronously.</p>
+<a id="md:example" class="tsd-anchor"></a><h3><a href="#md:example">Example</a></h3><pre><code class="language-javascript"><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">writeSync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-3">Buffer</span><span class="hl-0">.</span><span class="hl-5">from</span><span class="hl-0">(</span><span class="hl-1">&quot;hello world&quot;</span><span class="hl-0">));</span><br/><span class="hl-8">// or</span><br/><span class="hl-3">op</span><span class="hl-0">.</span><span class="hl-5">writeSync</span><span class="hl-0">(</span><span class="hl-1">&quot;path/to/file&quot;</span><span class="hl-0">, </span><span class="hl-1">&quot;hello world&quot;</span><span class="hl-0">);</span>
+</code><button>Copy</button></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5><span class="tsd-kind-parameter">path</span>: <span class="tsd-signature-type">string</span></h5></li>
+<li>
+<h5><span class="tsd-kind-parameter">content</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">Buffer</span></h5></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/Xuanwo/opendal/blob/007aa5b/bindings/nodejs/index.d.ts#L153">index.d.ts:153</a></li></ul></aside></li></ul></section></section></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility">
+<h4 class="uppercase">Member Visibility</h4><form>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></form></div>
+<div class="tsd-theme-toggle">
+<h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary">
+<h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z" fill="var(--color-text)"></path></svg>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<ul>
+<li><a href="#constructor" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-512-path"></use><use href="#icon-512-text"></use></svg><span>constructor</span></a></li>
+<li><a href="#append" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>append</span></a></li>
+<li>
+<ul>
+<li><a href="#md:notes"><span>Notes</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li></ul></li>
+<li><a href="#check" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>check</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#copy" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>copy</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#copySync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>copy<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#createDir" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Dir</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#createDirSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>create<wbr/>Dir<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#delete" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>delete</span></a></li>
+<li>
+<ul>
+<li><a href="#md:notes"><span>Notes</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li></ul></li>
+<li><a href="#deleteSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>delete<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#isExist" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>is<wbr/>Exist</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#isExistSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>is<wbr/>Exist<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#list" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>list</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#listSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>list<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#presignRead" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>presign<wbr/>Read</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#presignStat" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>presign<wbr/>Stat</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#presignWrite" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>presign<wbr/>Write</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#read" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>read</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#readSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>read<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#remove" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove</span></a></li>
+<li>
+<ul>
+<li><a href="#md:notes"><span>Notes</span></a></li>
+<li>
+<ul>
+<li><a href="#md:examples"><span>Examples</span></a></li></ul></li></ul></li>
+<li><a href="#removeAll" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove<wbr/>All</span></a></li>
+<li>
+<ul>
+<li><a href="#md:notes"><span>Notes</span></a></li>
+<li>
+<ul>
+<li><a href="#md:examples"><span>Examples</span></a></li></ul></li></ul></li>
+<li><a href="#rename" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>rename</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#renameSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>rename<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#scan" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>scan</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#scanSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>scan<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#stat" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>stat</span></a></li>
+<li>
+<ul>
+<li><a href="#md:notes"><span>Notes</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li></ul></li>
+<li><a href="#statSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>stat<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#write" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>write</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li>
+<li><a href="#writeSync" class=""><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>write<wbr/>Sync</span></a></li>
+<li>
+<ul>
+<li><a href="#md:example"><span>Example</span></a></li></ul></li></ul></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4-path"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)" id="icon-4-text"></path></svg><span>Apache <wbr/>OpenDAL -<wbr/> v0.36.1</span></a>
+<ul class="tsd-small-nested-navigation">
+<li><a href="BlockingLister.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg><span>Blocking<wbr/>Lister</span></a></li>
+<li><a href="Entry.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Entry</span></a></li>
+<li><a href="Lister.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Lister</span></a></li>
+<li><a href="Metadata.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Metadata</span></a></li>
+<li><a href="Operator.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Operator</span></a></li>
+<li><a href="../interfaces/PresignedRequest.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg><span>Presigned<wbr/>Request</span></a></li></ul></nav></div></div></div>
+<div class="tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div></body></html>

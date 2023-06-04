@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Proposal Name: `object_handler`Start Date: 2022-12-19RFC PR: apache/incubator-opendal#1085Tracking Issue: apache/incubator-opendal#1085Summary"><title>opendal::docs::rfcs::rfc_1085_object_handler - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceSerif4-Bold-a2c9cd1067f8b328.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../../../static.files/rustdoc-ba5701c5741a7b69.css" id="mainThemeStyle"><div id="rustdoc-vars" data-root-path="../../../../" data-static-root-path="../../../../static.files/" data-current-crate="opendal" data-themes="" data-resource-suffix="" data-rustdoc-version="1.70.0 (90c541806 2023-05-31)" data-search-js="search-e077946657036a58.js" data-settings-js="settings-298e1ea74db45b39.js" data-settings-css="settings-7bfb4c59cc6bc502.css" data-theme-light-css="light-0f8c037637f9eb3e.css" data-theme-dark-css="dark-1097f8e92a01e3cf.css" data-theme-ayu-css="ayu-614652228113ac93.css" ></div><script src="../../../../static.files/storage-62ce34ea385b278a.js"></script><script defer src="../../../../static.files/main-f61008743c98d196.js"></script><noscript><link rel="stylesheet" media="(prefers-color-scheme:light)" href="../../../../static.files/light-0f8c037637f9eb3e.css"><link rel="stylesheet" media="(prefers-color-scheme:dark)" href="../../../../static.files/dark-1097f8e92a01e3cf.css"><link rel="stylesheet" href="../../../../static.files/noscript-13285aec31fa243e.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc mod"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="logo-container" href="../../../../opendal/index.html"><img class="rust-logo" src="../../../../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><h2></h2></nav><nav class="sidebar"><a class="logo-container" href="../../../../opendal/index.html"><img class="rust-logo" src="../../../../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><h2 class="location"><a href="#">Module rfc_1085_object_handler</a></h2><div class="sidebar-elems"></div></nav><main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Module <a href="../../../index.html">opendal</a>::<wbr><a href="../../index.html">docs</a>::<wbr><a href="../index.html">rfcs</a>::<wbr><a class="mod" href="#">rfc_1085_object_handler</a><button id="copy-path" title="Copy item path to clipboard"><img src="../../../../static.files/clipboard-7571035ce49a181d.svg" width="19" height="18" alt="Copy item path"></button></h1><span class="out-of-band"><a class="srclink" href="../../../../src/opendal/docs/rfcs/mod.rs.html#120">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><ul>
+<li>Proposal Name: <code>object_handler</code></li>
+<li>Start Date: 2022-12-19</li>
+<li>RFC PR: <a href="https://github.com/apache/incubator-opendal/pull/1085">apache/incubator-opendal#1085</a></li>
+<li>Tracking Issue: <a href="https://github.com/apache/incubator-opendal/issues/1085">apache/incubator-opendal#1085</a></li>
+</ul>
+<h2 id="summary"><a href="#summary">Summary</a></h2>
+<p>Returning a <code>file description</code> to users for native seek support.</p>
+<h2 id="motivation"><a href="#motivation">Motivation</a></h2>
+<p>OpenDAL’s goal is to <code>access data freely, painlessly, and efficiently</code>, so we build an operation first API which means we provide operation instead of the file description. Users don’t need to call <code>open</code> before <code>read</code>; OpenDAL will handle all the open and close functions.</p>
+<p>However, our users do want to control the complex behavior of that:</p>
+<ul>
+<li>Some storage backends have native <code>seek</code> support, but OpenDAL can’t fully use them.</li>
+<li>Users want to improve performance by reusing the same file description without <code>open</code> and <code>close</code> for every read operation.</li>
+</ul>
+<p>This RFC will fill this gap.</p>
+<h2 id="guide-level-explanation"><a href="#guide-level-explanation">Guide-level explanation</a></h2>
+<p>Users can get an object handler like:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>oh: ObjectHandler = op.object(<span class="string">&quot;path/to/file&quot;</span>).open().<span class="kw">await</span><span class="question-mark">?</span>;</code></pre></div>
+<p><code>ObjectHandler</code> will implement <code>AsyncRead</code> and <code>AsyncSeek</code> so it can be used like <code>tokio::fs::File</code>. If the backend supports native seek operation, we will take the native process; otherwise, we will fall back to simulation implementations.</p>
+<p>The blocking version will be provided by:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>boh: BlockingObjectHandler = op.object(<span class="string">&quot;path/to/file&quot;</span>).blocking_open()<span class="question-mark">?</span>;</code></pre></div>
+<p>And <code>BlockingObjectHandler</code> will implement <code>Read</code> and <code>Seek</code> so it can be used like <code>std::fs::File</code>. If the backend supports native seek operation, we will take the native process; otherwise, we will fall back to simulation implementations.</p>
+<h2 id="reference-level-explanation"><a href="#reference-level-explanation">Reference-level explanation</a></h2>
+<p>This RFC will add a new API <code>open</code> in <code>Accessor</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">pub trait </span>Accessor {
+    <span class="kw">async fn </span>open(<span class="kw-2">&amp;</span><span class="self">self</span>, path: <span class="kw-2">&amp;</span>str, args: OpOpen) -&gt; <span class="prelude-ty">Result</span>&lt;(RpOpen, BytesHandler)&gt;;
+}</code></pre></div>
+<p>Only services that support native <code>seek</code> operations can implement this API, like <code>fs</code> and <code>hdfs</code>. For services that do not support native <code>seek</code> operations like <code>s3</code> and <code>azblob</code>, we will fall back to the simulation implementations: maintaining an in-memory index instead.</p>
+<h2 id="drawbacks"><a href="#drawbacks">Drawbacks</a></h2>
+<p>None</p>
+<h2 id="rationale-and-alternatives"><a href="#rationale-and-alternatives">Rationale and alternatives</a></h2><h3 id="how-about-writing-operations"><a href="#how-about-writing-operations">How about writing operations?</a></h3>
+<p>Ideally, writing on <code>ObjectHandler</code> should also be supported. But we still don’t know how this API will be used. Let’s apply this API for <code>read</code> first.</p>
+<h2 id="prior-art"><a href="#prior-art">Prior art</a></h2>
+<p>None</p>
+<h2 id="unresolved-questions"><a href="#unresolved-questions">Unresolved questions</a></h2>
+<p>None</p>
+<h2 id="future-possibilities"><a href="#future-possibilities">Future possibilities</a></h2>
+<ul>
+<li>Add write support</li>
+<li>Adopt native <code>pread</code></li>
+</ul>
+</div></details></section></div></main></body></html>

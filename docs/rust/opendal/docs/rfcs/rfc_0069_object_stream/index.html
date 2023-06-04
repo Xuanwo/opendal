@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Proposal Name: `object_stream`Start Date: 2022-02-25RFC PR: apache/incubator-opendal#69Tracking Issue: apache/incubator-opendal#69Summary"><title>opendal::docs::rfcs::rfc_0069_object_stream - Rust</title><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceSerif4-Regular-46f98efaafac5295.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/FiraSans-Regular-018c141bf0843ffd.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/FiraSans-Medium-8f9a781e4970d388.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceCodePro-Regular-562dcc5011b6de7d.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceSerif4-Bold-a2c9cd1067f8b328.ttf.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../../../static.files/SourceCodePro-Semibold-d899c5a5c4aeb14a.ttf.woff2"><link rel="stylesheet" href="../../../../static.files/normalize-76eba96aa4d2e634.css"><link rel="stylesheet" href="../../../../static.files/rustdoc-ba5701c5741a7b69.css" id="mainThemeStyle"><div id="rustdoc-vars" data-root-path="../../../../" data-static-root-path="../../../../static.files/" data-current-crate="opendal" data-themes="" data-resource-suffix="" data-rustdoc-version="1.70.0 (90c541806 2023-05-31)" data-search-js="search-e077946657036a58.js" data-settings-js="settings-298e1ea74db45b39.js" data-settings-css="settings-7bfb4c59cc6bc502.css" data-theme-light-css="light-0f8c037637f9eb3e.css" data-theme-dark-css="dark-1097f8e92a01e3cf.css" data-theme-ayu-css="ayu-614652228113ac93.css" ></div><script src="../../../../static.files/storage-62ce34ea385b278a.js"></script><script defer src="../../../../static.files/main-f61008743c98d196.js"></script><noscript><link rel="stylesheet" media="(prefers-color-scheme:light)" href="../../../../static.files/light-0f8c037637f9eb3e.css"><link rel="stylesheet" media="(prefers-color-scheme:dark)" href="../../../../static.files/dark-1097f8e92a01e3cf.css"><link rel="stylesheet" href="../../../../static.files/noscript-13285aec31fa243e.css"></noscript><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-16x16-8b506e7a72182f1c.png"><link rel="alternate icon" type="image/png" href="../../../../static.files/favicon-32x32-422f7d1d52889060.png"><link rel="icon" type="image/svg+xml" href="../../../../static.files/favicon-2c020d218678b618.svg"></head><body class="rustdoc mod"><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="mobile-topbar"><button class="sidebar-menu-toggle">&#9776;</button><a class="logo-container" href="../../../../opendal/index.html"><img class="rust-logo" src="../../../../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><h2></h2></nav><nav class="sidebar"><a class="logo-container" href="../../../../opendal/index.html"><img class="rust-logo" src="../../../../static.files/rust-logo-151179464ae7ed46.svg" alt="logo"></a><h2 class="location"><a href="#">Module rfc_0069_object_stream</a></h2><div class="sidebar-elems"></div></nav><main><div class="width-limiter"><nav class="sub"><form class="search-form"><span></span><input class="search-input" name="search" aria-label="Run search in the documentation" autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><div id="help-button" title="help" tabindex="-1"><a href="../../../../help.html">?</a></div><div id="settings-menu" tabindex="-1"><a href="../../../../settings.html" title="settings"><img width="22" height="22" alt="Change settings" src="../../../../static.files/wheel-7b819b6101059cd0.svg"></a></div></form></nav><section id="main-content" class="content"><div class="main-heading"><h1>Module <a href="../../../index.html">opendal</a>::<wbr><a href="../../index.html">docs</a>::<wbr><a href="../index.html">rfcs</a>::<wbr><a class="mod" href="#">rfc_0069_object_stream</a><button id="copy-path" title="Copy item path to clipboard"><img src="../../../../static.files/clipboard-7571035ce49a181d.svg" width="19" height="18" alt="Copy item path"></button></h1><span class="out-of-band"><a class="srclink" href="../../../../src/opendal/docs/rfcs/mod.rs.html#45">source</a> · <button id="toggle-all-docs" title="collapse all docs">[<span>&#x2212;</span>]</button></span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><ul>
+<li>Proposal Name: <code>object_stream</code></li>
+<li>Start Date: 2022-02-25</li>
+<li>RFC PR: <a href="https://github.com/apache/incubator-opendal/pull/69">apache/incubator-opendal#69</a></li>
+<li>Tracking Issue: <a href="https://github.com/apache/incubator-opendal/issues/69">apache/incubator-opendal#69</a></li>
+</ul>
+<h2 id="summary"><a href="#summary">Summary</a></h2>
+<p>Allow user to read dir via <code>ObjectStream</code>.</p>
+<h2 id="motivation"><a href="#motivation">Motivation</a></h2>
+<p>Users need <code>readdir</code> support in <code>OpenDAL</code>: <a href="https://github.com/apache/incubator-opendal/issues/12">Implement List support</a>. Take <a href="https://github.com/datafuselabs/databend">databend</a> for example, with <code>List</code> support, we can implement copy from <code>s3://bucket/path/to/dir</code> instead of only <code>s3://bucket/path/to/file</code>.</p>
+<h2 id="guide-level-explanation"><a href="#guide-level-explanation">Guide-level explanation</a></h2>
+<p><code>Operator</code> supports new action called <code>objects(&quot;path/to/dir&quot;)</code> which returns a <code>ObjectStream</code>, we can iterator current dir like <code>std::fs::ReadDir</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span><span class="kw-2">mut </span>obs = op.objects(<span class="string">&quot;&quot;</span>).map(|o| o.expect(<span class="string">&quot;list object&quot;</span>));
+<span class="kw">while let </span><span class="prelude-val">Some</span>(o) = obs.next().<span class="kw">await </span>{
+    <span class="comment">// Do something upon `Object`.
+</span>}</code></pre></div>
+<p>To better support different file modes, there is a new object meta called <code>ObjectMode</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>meta = o.metadata().<span class="kw">await</span><span class="question-mark">?</span>;
+<span class="kw">let </span>mode = meta.mode();
+<span class="kw">if </span>mode.contains(ObjectMode::FILE) {
+    <span class="comment">// Do something on a file object.
+</span>} <span class="kw">else if </span>mode.contains(ObjectMode::DIR) {
+    <span class="comment">// Do something on a dir object.
+</span>}</code></pre></div>
+<p>We will try to cache some object metadata so that users can reduce <code>stat</code> calls:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">let </span>meta = o.metadata_cached().<span class="kw">await</span><span class="question-mark">?</span>;</code></pre></div>
+<p><code>o.metadata_cached()</code> will return local cached metadata if available.</p>
+<h2 id="reference-level-explanation"><a href="#reference-level-explanation">Reference-level explanation</a></h2>
+<p>First, we will add a new API in <code>Accessor</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">pub type </span>BoxedObjectStream = Box&lt;<span class="kw">dyn </span>futures::Stream&lt;Item = <span class="prelude-ty">Result</span>&lt;Object&gt;&gt; + Unpin + Send&gt;;
+
+<span class="kw">async fn </span>list(<span class="kw-2">&amp;</span><span class="self">self</span>, args: <span class="kw-2">&amp;</span>OpList) -&gt; <span class="prelude-ty">Result</span>&lt;BoxedObjectStream&gt; {
+    <span class="kw">let _ </span>= args;
+    <span class="macro">unimplemented!</span>()
+}</code></pre></div>
+<p>To support options in the future, we will wrap this call via <code>ObjectStream</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">pub struct </span>ObjectStream {
+    acc: Arc&lt;<span class="kw">dyn </span>Accessor&gt;,
+    path: String,
+
+    state: State,
+}
+
+<span class="kw">enum </span>State {
+    Idle,
+    Sending(BoxFuture&lt;<span class="lifetime">&#39;static</span>, <span class="prelude-ty">Result</span>&lt;BoxedObjectStream&gt;&gt;),
+    Listing(BoxedObjectStream),
+}</code></pre></div>
+<p>So the public API to end-users will be:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">impl </span>Operator {
+    <span class="kw">pub fn </span>objects(<span class="kw-2">&amp;</span><span class="self">self</span>, path: <span class="kw-2">&amp;</span>str) -&gt; ObjectStream {
+        ObjectStream::new(<span class="self">self</span>.inner(), path)
+    }
+}</code></pre></div>
+<p>For cached metadata support, we will add a flag in <code>Metadata</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="attr">#[derive(Debug, Clone, Default)]
+</span><span class="kw">pub struct </span>Metadata {
+    complete: bool,
+
+    path: String,
+    mode: <span class="prelude-ty">Option</span>&lt;ObjectMode&gt;,
+
+    content_length: <span class="prelude-ty">Option</span>&lt;u64&gt;,
+}</code></pre></div>
+<p>And add new API <code>Objbct::metadata_cached()</code>:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">pub async fn </span>metadata_cached(<span class="kw-2">&amp;mut </span><span class="self">self</span>) -&gt; <span class="prelude-ty">Result</span>&lt;<span class="kw-2">&amp;</span>Metadata&gt; {
+    <span class="kw">if </span><span class="self">self</span>.meta.complete() {
+        <span class="kw">return </span><span class="prelude-val">Ok</span>(<span class="kw-2">&amp;</span><span class="self">self</span>.meta);
+    }
+
+    <span class="kw">let </span>op = <span class="kw-2">&amp;</span>OpStat::new(<span class="self">self</span>.meta.path());
+    <span class="self">self</span>.meta = <span class="self">self</span>.acc.stat(op).<span class="kw">await</span><span class="question-mark">?</span>;
+
+    <span class="prelude-val">Ok</span>(<span class="kw-2">&amp;</span><span class="self">self</span>.meta)
+}</code></pre></div>
+<p>The backend implementor must make sure <code>complete</code> is correctly set.</p>
+<p><code>Metadata</code> will be immutable outsides, so all <code>set_xxx</code> APIs will be set to crate public only:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">pub</span>(<span class="kw">crate</span>) <span class="kw">fn </span>set_content_length(<span class="kw-2">&amp;mut </span><span class="self">self</span>, content_length: u64) -&gt; <span class="kw-2">&amp;mut </span><span class="self">Self </span>{
+    <span class="self">self</span>.content_length = <span class="prelude-val">Some</span>(content_length);
+    <span class="self">self
+</span>}</code></pre></div>
+<h2 id="drawbacks"><a href="#drawbacks">Drawbacks</a></h2>
+<p>None</p>
+<h2 id="rationale-and-alternatives"><a href="#rationale-and-alternatives">Rationale and alternatives</a></h2>
+<p>None</p>
+<h2 id="prior-art"><a href="#prior-art">Prior art</a></h2>
+<p>None</p>
+<h2 id="unresolved-questions"><a href="#unresolved-questions">Unresolved questions</a></h2>
+<p>None</p>
+<h2 id="future-possibilities"><a href="#future-possibilities">Future possibilities</a></h2>
+<ul>
+<li>More precise field-level metadata cache so that user can send <code>stat</code> only when needed.</li>
+</ul>
+</div></details></section></div></main></body></html>

@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"fn":["by_range","from_fd"],"struct":["FdReader","RangeReader"]};
