@@ -56,7 +56,7 @@ jobs:
       - name: Run sccache-cache
         uses: Xuanwo/sccache-action@debug
         with:
-          version: "v0.5.3-debug-8"
+          version: "v0.5.3-debug-9"
       - name: Test
         shell: bash
         working-directory: core
