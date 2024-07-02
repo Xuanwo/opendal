@@ -36,14 +36,14 @@ bytes = "1"
 futures = "0.3"
 futures-util = "0.3"
 object_store = "0.10"
-opendal = { version = "0.47.0", path = "../../core" }
+opendal = { version = "0.47.0" }
 pin-project = "1.1"
 send_wrapper = { version = "0.6", features = ["futures"], optional = true }
 tokio = { version = "1", default-features = false }
 flagset = "0.4"
 
 [dev-dependencies]
-opendal = { version = "0.47.0", path = "../../core", features = [
+opendal = { version = "0.47.0",  features = [
   "services-memory",
   "services-s3",
 ] }
